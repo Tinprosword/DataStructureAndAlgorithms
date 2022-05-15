@@ -78,11 +78,11 @@ def merge(left, right):
         else:
             list.append(right[j])
             j += 1    
-    
+    #list += left[i:]
     while i < len(left):
         list.append(left[i])
         i += 1
-    
+    #list += right[i:]
     while j < len(right):
         list.append(right[j])
         j += 1
