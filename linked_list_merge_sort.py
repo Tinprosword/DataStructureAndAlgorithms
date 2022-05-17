@@ -74,12 +74,12 @@ def merge(left, right):
     takes n times, linear, O(n)
     """ 
     # Create a new linked list to contain the merged list
-    mergedList = LinkedList()
+    merged_list = LinkedList()
     
     # Add a fake head that is discarded later
-    mergedList.add(0)
+    merged_list.add(0)
     
-    current = mergedList.head
+    current = merged_list.head
     
     # Object head nodes for left and right linked lists
     left_head = left.head
@@ -117,10 +117,10 @@ def merge(left, right):
         current = current.next_node
     
     # Discard fake head and set first merged node as head
-    head = mergedList.head.next_node
-    mergedList.head = head        
+    head = merged_list.head.next_node
+    merged_list.head = head        
      
-    return mergedList
+    return merged_list
 
 l = LinkedList()
 l.add(9)

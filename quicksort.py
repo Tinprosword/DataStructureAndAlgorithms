@@ -38,8 +38,8 @@ def quicksort(values):
     greater_than_pivot = []
     # better to use random pivot
     # pivot = values[0]
-    randIndex = random.randint(0, list_length-1)
-    pivot = values[randIndex]
+    rand_index = random.randint(0, list_length-1)
+    pivot = values[rand_index]
     
     for value in values[1:]:
         if value <= pivot:
